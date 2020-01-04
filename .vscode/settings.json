@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/home/tareqmonwer/.local/share/virtualenvs/library-6NP0uEMt/bin/python",
+    "git.ignoreLimitWarning": true,
+    "python.formatting.provider": "black"
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>All Books</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      .book {
+        border-left: 3px solid salmon !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+          <h2 class="mb-3">All Books:</h2>
+        </div>
+        {% for book in books %}
+        <div class="book col-md-8 border mb-3 p-2 pl-3">
+          <p>Name: {{ book.title }}</p>
+          <p>Subtitle: {{ book.subtitle }}</p>
+          <p>Author: {{ book.author }}</p>
+          <p>ISBN: {{ book.isbn }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
